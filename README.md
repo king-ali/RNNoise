@@ -1,6 +1,8 @@
-# Rnnoise window demo
+# Rnnoise window
 
 RNNoise is a noise suppression library based on a recurrent neural network
+
+## Demo
 
 Get Wsl on window
 Results in files are removed from /mnt/wsl so you can do somewhere /mnt/c or d
@@ -34,6 +36,8 @@ Replace below  farend.wav with yout noisy speech and rnnoise_farend.wav as outpu
 The output is a 16-bit raw PCM file
 
 <img src="/img/output.png" width="1000" height="200">
+
+## Training
 
 Below in our case nearend.wav is speech signal and farend.wav is noise
 
