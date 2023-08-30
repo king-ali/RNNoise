@@ -33,7 +33,7 @@ Replace below  farend.wav with yout noisy speech and rnnoise_farend.wav as outpu
 ```
 The output is a 16-bit raw PCM file
 
-![](./Img/output.png)
+<img src="/img/output.png" width="1000" height="200">
 
 Below in our case nearend.wav is speech signal and farend.wav is noise
 
@@ -51,6 +51,6 @@ python3 ./bin2hdf5.py ../src/training.f32 50000 87 training.h5
 python3 ./rnn_train.py
 ```
 
-![](./Img/train.png)
+<img src="/img/train.png" width="500" height="200">
 
 
