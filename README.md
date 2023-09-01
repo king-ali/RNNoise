@@ -39,7 +39,7 @@ The output is a 16-bit raw PCM file
 
 ## Training
 
-Below in our case nearend.wav is speech signal and farend.wav is noise
+For training we need a clean speech and noise only file. 
 
 ```bash
 cd ..
