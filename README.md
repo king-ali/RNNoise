@@ -45,7 +45,7 @@ Below in our case nearend.wav is speech signal and farend.wav is noise
 cd ..
 cd src
 ./compile.sh
-./denoise_training nearend.wav farend.wav 50000 > training.f32
+./denoise_training clean_speech.wav noise.wav 50000 > training.f32
 ```
 
 ```bash
@@ -56,5 +56,27 @@ python3 ./rnn_train.py
 ```
 
 <img src="/img/train.png" width="500" height="200">
+
+We used our own dataset gathered from phones. For example dataset you can use Microsoft MS-SNSD to test [here][https://github.com/microsoft/MS-SNSD]
+
+
+```bash
+./dump_rnn.py weights.hdf5 ../src/rnn_data.c ../src/rnn_data.h orig
+```
+
+if you are facing issue of .h files being changed then revert that change then proceed furthur
+
+```bash
+cd ..
+./autogen.sh
+./configure
+make
+```
+
+Results
+
+<img src="/img/output2.png" width="1000" height="200">
+
+
 
 
