@@ -57,7 +57,7 @@ python3 ./rnn_train.py
 
 <img src="/img/train.png" width="500" height="200">
 
-We used our own dataset gathered from phones. For example dataset you can use Microsoft MS-SNSD to test [here][https://github.com/microsoft/MS-SNSD]
+We used our own dataset gathered from phones. For example dataset you can use Microsoft MS-SNSD to test [https://github.com/microsoft/MS-SNSD]
 
 
 ```bash
