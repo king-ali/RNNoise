@@ -1,6 +1,6 @@
 # Rnnoise window
 
-RNNoise is a noise suppression library based on a recurrent neural network
+RNNoise is a noise suppression library based on a recurrent neural network. Rnnoise provides high quality real-time noise suppression that can run smoothly on mobiles and browsers. 
 
 ## Demo
 
