@@ -1,8 +1,8 @@
-# Rnnoise window
+# Rnnoise
 
-RNNoise is a noise suppression library based on a recurrent neural network. Rnnoise provides high quality real-time noise suppression that can run smoothly on mobiles and browsers. 
+This is the most comprehensive guide for RNNoise, a noise suppression library built upon a recurrent neural network. RNNoise delivers top-notch real-time noise reduction, ensuring a seamless audio communication experience on mobile devices by eliminating background noises and echoes. While the official implementation and advanced versions of RNNoise yield impressive results, they may still face challenges in effectively suppressing echoes and various types of noise while preserving speech quality. We trained and fine-tuned RNNoise to address these challenges successfully.
 
-## Demo
+## Demo window
 
 Get Wsl on window
 Results in files are removed from /mnt/wsl so you can do somewhere /mnt/c or d
@@ -61,21 +61,51 @@ We used our own dataset gathered from phones. For example dataset you can use Mi
 
 
 ```bash
-./dump_rnn.py weights.hdf5 ../src/rnn_data.c ../src/rnn_data.h orig
+python3 ./dump_rnn.py weights.hdf5 ../src/rnn_data.c ../src/rnn_data.h orig
 ```
 
 if you are facing issue of .h files being changed then revert that change then proceed furthur
 
 ```bash
 cd ..
-./autogen.sh
-./configure
 make
 ```
+
 
 Results
 
 <img src="/img/output2.png" width="1000" height="200">
+
+
+
+## Using pretrained model
+
+Upon inference we found that Hogwash variant performs better in echo and noise suppression than Vanila, so we used pretrained model of hogwash for training on our dataset.
+
+Results
+
+
+<img src="/img/hog3.png" width="1000" height="200">
+
+<img src="/img/hog2.png" width="1000" height="200">
+
+
+
+## Data preprocessing
+
+We gathered dataset of speech and echo in respective folders, the data is those folders is combined to make single speech and one echo file. Next we divided them to 30 second segemnt as required by rnnoise for feature extraction and training. Finally we combined all files into PCM 16-bit, 48000 Hz raw file as clean.raw and echo.raw
+
+
+## Data Augmentation
+
+To enhance our dataset, we performed data augmentation by collecting various impulse responses from different environments. We then applied convolution to these impulse responses with our echo and noise data.
+
+
+
+
+
+
+
 
 
 
