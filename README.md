@@ -45,7 +45,7 @@ For training we need a clean speech and noise only file.
 cd ..
 cd src
 ./compile.sh
-./denoise_training clean_speech.wav noise.wav 50000 > training.f32
+./denoise_training clean_speech.wav noise.wav 500000 > training.f32
 ```
 
 ```bash
