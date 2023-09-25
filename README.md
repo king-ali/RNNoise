@@ -45,13 +45,13 @@ For training we need a clean speech and noise only file.
 cd ..
 cd src
 ./compile.sh
-./denoise_training clean_speech.wav noise.wav 500000 > training.f32
+./denoise_training clean_speech.raw noise.raw 500000 > training.f32
 ```
 
 ```bash
 cd ..
 cd training
-python3 ./bin2hdf5.py ../src/training.f32 50000 87 training.h5
+python3 ./bin2hdf5.py ../src/training.f32 500000 87 training.h5
 python3 ./rnn_train.py
 ```
 
