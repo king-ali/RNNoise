@@ -93,7 +93,10 @@ Results
 
 ## Data preprocessing
 
-We gathered dataset of speech and echo in respective folders, the data is those folders is combined to make single speech and one echo file. Next we divided them to 30 second segemnt as required by rnnoise for feature extraction and training. Finally we combined all files into PCM 16-bit, 48000 Hz raw file as clean.raw and echo.raw
+We gathered dataset of speech and echo in respective folders, the data is those folders is combined to make single speech and one echo file. Next we divided them to 30 second segemnt as required by rnnoise for feature extraction and training. Finally we combined all files into PCM 16-bit, 48000 Hz raw file as clean.raw and echo.raw.
+
+Within the pre-processing folder, the "clean" folder contains the speech data, while the "echo" folder have the echo data. To initiate the pre-processing, execute the "p1.py" script, which combne all the files and saves them in the output folder. Following this, execute the "p2.py" script, which splits the combined file into 30-second segments. Subsequently, execute the "p3.py" script to combine all the segmented files. Finally, Audacity to convert these files into the raw format.
+
 
 
 ## Data Augmentation
