@@ -85,9 +85,9 @@ Upon inference we found that Hogwash variant performs better in echo and noise s
 Results
 
 
-<img src="/img/hog3.png" width="1000" height="200">
+<img src="/img/hog3.png" width="1000" height="400">
 
-<img src="/img/hog2.png" width="1000" height="200">
+<img src="/img/hog2.png" width="1000" height="400">
 
 
 
