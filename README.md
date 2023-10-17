@@ -1,6 +1,6 @@
 # Rnnoise
 
-This is the most comprehensive guide for RNNoise, a noise suppression library built upon a recurrent neural network. RNNoise delivers top-notch real-time noise reduction, ensuring a seamless audio communication experience on mobile devices by eliminating background noises and echoes. While the official implementation and advanced versions of RNNoise yield impressive results, they still face challenges in effectively suppressing echoes and various types of noise while preserving speech quality. We trained and fine-tuned RNNoise to address these challenges successfully.
+This is the most comprehensive detail for RNNoise, a noise suppression library built upon a recurrent neural network. RNNoise delivers top-notch real-time noise reduction, ensuring a seamless audio communication experience on mobile devices by eliminating background noises and echoes. While the official implementation and advanced versions of RNNoise yield impressive results, they still face challenges in effectively suppressing echoes and various types of noise while preserving speech quality. We trained and fine-tuned RNNoise to address these challenges successfully.
 
 ## Demo window
 
