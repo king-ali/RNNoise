@@ -28,7 +28,7 @@ make
 ```bash
 explorer.exe .
 ```
-Replace below  farend.wav with yout noisy speech and rnnoise_farend.wav as output denoised
+Replace below  farend.wav with your noisy speech and rnnoise_farend.wav as output denoised
 
 ```bash
 ./examples/rnnoise_demo farend.wav rnnoise_farend.wav
@@ -80,7 +80,8 @@ Results
 
 ## Using pretrained model
 
-Upon inference we found that Hogwash variant performs better in echo and noise suppression than Vanila, so we used pretrained model of hogwash for training on our dataset.
+Upon inference we found that Hogwash variant performs better in echo and noise suppression than Vanila, so we used pretrained model of hogwash for training on our dataset. You can use the any pre-trained models at [https://github.com/GregorR/rnnoise-models]
+
 
 Results
 
@@ -103,6 +104,9 @@ Within the pre-processing folder, the "clean" folder contains the speech data, w
 
 To enhance our dataset, we performed data augmentation by collecting various impulse responses from different environments. We then applied convolution to these impulse responses with our echo and noise data.
 
+## Knowledge Distillation 
+Knowledge distillation is process of transferring knowledge from teacher model to smaller student model. This makes the student model to learn from the knowledge of higher model. The model architect is given in file rnn_train, which can be changed to train model from scratch or by loading pre-trained model. We trained three teachers models for noise, echo and reverb suppression. We used these models to train our student model Upon extensive testing we found that model performed good for noise and echo but it did not performed well for reverb suppression. 
+ 
 
 
 
